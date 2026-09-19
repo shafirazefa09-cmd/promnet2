@@ -1,0 +1,122 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(silver, seashell,snow,lightslategray);
+}
+
+nav {
+    color:blue;
+    text-decoration: none;
+    margin: 10px;
+    padding: 0px;
+    text-align:right;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    margin: 10px;
+}
+
+h1 {
+    color:black;
+    text-decoration:solid;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(25, 23, 143);
+    text-decoration:none;
+    margin-left: 15px;
+    padding: 5px;
+    text-align:justify;
+}
+
+h2:first-of-type {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(34, 83, 38);
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px;
+    text-align:justify;
+}
+
+p {
+    color:black;
+    font-size: 16px;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+}
+   
+img[src="assets/images/profile.jpg"] {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid lightslategray;
+}
+
+.sambutan {
+    text-align: center;
+    font-weight: bolder;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sambutan {
+    text-align: center;
+    font-weight: bold;
+    animation: muncul 3s ease;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: masuk 1s ease;
+}
+
+@keyframes masuk {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: purple;
+    font-size: 18px;
+}
+
